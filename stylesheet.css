@@ -1,0 +1,130 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif; */
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  animation: backgroundLight 10s infinite;
+}
+
+body h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.frame {
+  height: 400px;
+  width: 400px;
+}
+
+.tree {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.leaves {
+  display: flex;
+  position: absolute;
+  transform: translateY(-50px);
+}
+
+.left {
+  height: 0;
+  width: 0;
+  border-top: 0px solid transparent;
+  border-left: 90px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 250px solid #b4351c;
+}
+.right {
+  height: 0;
+  width: 0;
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 250px solid #e84624;
+}
+
+.wood {
+  height: 60%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.branches {
+  width: 5px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.b1 {
+  height: 70px;
+  background-color: #e8c87e;
+  transform: rotateZ(-40deg) translateX(-45px) translateY(20px);
+}
+.b2 {
+  height: 60px;
+  background-color: #e8c87e;
+  transform: rotateZ(40deg) translateX(28px) translateY(5px);
+}
+.b3 {
+  height: 50px;
+  background-color: #e8c87e;
+  transform: rotateZ(-40deg) translateX(-5px) translateY(-20px);
+}
+.b4 {
+  height: 40px;
+  background-color: #e8c87e;
+  transform: rotateZ(40deg) translateX(-30px) translateY(-55px);
+}
+.b5 {
+  height: 30px;
+  background-color: #e8c87e;
+  transform: rotateZ(-40deg) translateX(55px) translateY(-80px);
+}
+
+.trunk {
+  background-color: #e8c87e;
+  height: 100%;
+  width: 5px;
+  border-radius: 50px;
+}
+
+.roots {
+  /* background-color: #e8c87e; */
+  background-color: lightgray;
+  height: 90px;
+  width: 5px;
+  border-radius: 50px;
+  transform: rotateZ(90deg) translateX(120px);
+  position: absolute;
+}
+
+.textsInfo {
+  padding: 1rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.textsInfo p {
+  text-align: center;
+}
+
+.textsInfo h1 {
+  color: #f0db4f;
+}
